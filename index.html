@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="shortcut icon" href="./icons8-calculator-48.png" type="image/x-icon">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+  
+</head>
+<body>
+  <header><h1>calculator</h1></header>
+
+  <div class="design-div">
+    <ul>
+      <li class="up-left"></li>
+      <li class="up-right"></li>
+      <li class="mid-left"></li>
+      <li class="mid-right"></li>
+      <li class="bottom-left"></li>
+      <li class="bottom-right"></li>
+    </ul>
+  </div>
+
+  <form action="" name="calculator">
+    <div class="calculator">
+      <div class="cal-head">
+        <div class="top">
+          <h4>v2.5 beta</h4>
+        </div>
+        <input type="text" name="screen" value="" class="result" placeholder="0" readonly>
+      </div>
+      <hr>
+      <div class="cal-body">
+        <div class="row">
+          <input type="button" class="btn clear" name="" value="C" onclick="calculator.screen.value = ''">
+          <input type="button" class="btn" name="" value="&radic;" onclick="calculator.screen.value = Math.sqrt(calculator.screen.value)">
+          <input type="button" class="btn" name="" value="%" onclick="calculator.screen.value = calculator.screen.value / 100">
+          <input type="button" class="btn oparator" name="" value="/" onclick="calculator.screen.value += '/'">
+        </div>
+
+        <div class="row">
+          <input type="button" class="btn" name="" value="7" onclick="calculator.screen.value += '7'">
+          <input type="button" class="btn" name="" value="8" onclick="calculator.screen.value += '8'">
+          <input type="button" class="btn" name="" value="9" onclick="calculator.screen.value += '9'">
+          <input type="button" class="btn oparator" name="" value="X" onclick="calculator.screen.value += '*'">
+        </div>
+
+        <div class="row">
+          <input type="button" class="btn" name="" value="4" onclick="calculator.screen.value += '4'">
+          <input type="button" class="btn" name="" value="5" onclick="calculator.screen.value += '5'">
+          <input type="button" class="btn" name="" value="6" onclick="calculator.screen.value += '6'">
+          <input type="button" class="btn oparator" name="" value="-" onclick="calculator.screen.value += '-'">
+        </div>
+
+        <div class="row">
+          <input type="button" class="btn" name="" value="1" onclick="calculator.screen.value += '1'">
+          <input type="button" class="btn" name="" value="2" onclick="calculator.screen.value += '2'">
+          <input type="button" class="btn" name="" value="3" onclick="calculator.screen.value += '3'">
+          <input type="button" class="btn oparator" name="" value="+" onclick="calculator.screen.value += '+'">
+        </div>
+
+        <div class="row">
+          <input type="button" class="btn" name="" value="0" onclick="calculator.screen.value += '0'">
+          <input type="button" class="btn" name="" value="." onclick="calculator.screen.value += '.'">
+          <input type="button" class="btn" name="" value="&larr;" onclick="calculator.screen.value = calculator.screen.value.slice(0, -1)">
+          <input type="button" class="btn equal" name="" value="=" onclick="calculator.screen.value = eval(calculator.screen.value)">
+        </div>
+
+
+        <div class="body-footer">
+          <p>© 2021 MAHMOOD HASSAN RAMEEM. All Rights Resurved</p>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <footer>
+    <p>&copy; 2021 MAHMOOD HASSAN RAMEEM. All Rights Resurved</p>
+  </footer>
+      
+</body>
+</html>
